@@ -4,6 +4,7 @@ $(document).ready(function(){
     $("#regionID").click(function(){
 
         var region = $("#regionID").val();
+
         //console.log(cat);
     $.ajax({
       type: 'get',
@@ -11,11 +12,12 @@ $(document).ready(function(){
       url: '{{url('/getUniversiteNational')}}',
       data: 'region_id=' + region,
       success:function(response){
-        console.log(response);
-        $("#productData").html(response);
+        //console.log(response);
+        $("#orientateurData").html(response);
       }
     });
 
     });
 });
+
 </script>

@@ -16,17 +16,23 @@ class HomeController extends Controller
     public function index()
     {
         $regions = Region::all();
-        return view('welcome', compact('regions'));
+        return view('home', compact('regions'));
 
     }
 
     public function getNational(Request $request){
         $region_id = $request->region_id;
 
-        return $data = DB::table('salles')
+        $data = DB::table('salles')
         ->join('users','salles.user_id','users.id')
         ->where('users.region_id',$region_id)
+        ->where('users.role','orientateur')
         ->get();
+        //dd($data);
+
+        return view('orientateurPage', [
+            'data' => $data
+        ]);
     }
 
     /**
