@@ -9,21 +9,45 @@
             @endforeach
         </select>
     </div>
-    <div class="row mt-5" style="color: white;">
+    {{-- <div class="row mt-5" style="color: white;"> --}}
         {{-- <div class="owl-carousel owl-theme" id="orientateurData">
 
         </div> --}}
-        <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-dark slider-nav-outside-expand">
-    <ul class="slider-container py-4"  id="orientateurData">
+        <div class="swiffy-slider slider-item-show4 slider-nav-round slider-nav-dark slider-nav-sm slider-nav-autoplay slider-indicators-round slider-indicators-dark slider-nav-mousedrag">
+            <ul class="slider-container" id="orientateurData" style="">
 
-    </ul>
+            </ul>
 
-    <button type="button" class="slider-nav" aria-label="Go to previous"></button>
-    <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+
+            <ul class="slider-indicators">
+                <li class=""></li>
+                <li></li>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+
+        {{-- <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-dark slider-nav-outside-expand">
+             <ul class="slider-container py-4"  id="orientateurData">
+
+             </ul>
+
+         <button type="button" class="slider-nav" aria-label="Go to previous"></button>
+         <button type="button" class="slider-nav slider-nav-next" aria-label="Go to next"></button>
+        </div> --}}
+
+
+    {{-- </div> --}}
 </div>
-    </div>
-</div>
-
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider-extensions.min.js"></script>
 
 
 @endsection

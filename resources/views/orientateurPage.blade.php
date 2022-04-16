@@ -1,7 +1,9 @@
 
 @foreach ($data as $orientateur)
                         <li>
-                            <div class="card" style="width: 18rem;">
+
+
+                            <div class="card">
                                 <img src="..." class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <h5 class="card-title">{{$orientateur->nom}}</h5>
@@ -9,5 +11,6 @@
                                   <a href="#" class="btn btn-primary">Go somewhere</a>
                                 </div>
                               </div>
+
                             </li>
                             @endforeach
